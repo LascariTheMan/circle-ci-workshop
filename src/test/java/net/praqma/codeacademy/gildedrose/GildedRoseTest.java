@@ -38,9 +38,7 @@ public class GildedRoseTest {
     }
     @Test
     public void quality_is_never_negative() {
-        Item[] items = new Item[] { new Item("Elixir of the Mongoose", 10, 1) };
-        items.add(new Item("Cake", 8, 0));
-        items.add(new Item("Cake", 8, 2));
+        Item[] items = new Item[] { new Item("Elixir of the Mongoose", 10, 1), new Item("Cake", 8, 0), new Item("Cake", 8, 2) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         app.updateQuality();
