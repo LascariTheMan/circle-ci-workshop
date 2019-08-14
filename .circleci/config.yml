@@ -25,5 +25,7 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - package
       - test
+      - package:
+        requires:
+          - test
