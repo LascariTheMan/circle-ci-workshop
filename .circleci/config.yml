@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run:
           name: Test
-          command: gradle test
+          command: gradle test -i
       - store_test_results:
           path: build/test-results
       - persist_to_workspace:
