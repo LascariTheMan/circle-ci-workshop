@@ -27,5 +27,5 @@ workflows:
     jobs:
       - test
       - package:
-        requires:
-          - test
+          requires:
+            - test
